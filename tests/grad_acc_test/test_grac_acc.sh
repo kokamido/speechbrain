@@ -11,4 +11,4 @@ CUDA_VISIBLE_DEVICES=0,1 python helpers/train.py configs/stop_by_iter_no_grad_ac
 CUDA_VISIBLE_DEVICES=0,1 python helpers/train.py configs/stop_by_iter_grad_acc_2_dp.yaml
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 helpers/train.py configs/stop_by_iter_grad_acc_4_ddp.yaml --distributed_launch --distributed_backend=nccl
 
-python grad_acc_check.py --grad_accumulation_factor=4
+python grad_acc_check.py
