@@ -1,0 +1,9 @@
+"name": stop_by_iter_grad_acc_2_dp
+"grad_accumulation_factor": 2
+"data_parallel_backend": True
+"train_batch_size": 32
+"optimizer_step_limit": 320
+
+"number_of_epochs": 100
+"epoch_counter": !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: !ref <number_of_epochs>

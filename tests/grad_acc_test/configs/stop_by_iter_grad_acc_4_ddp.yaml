@@ -1,0 +1,8 @@
+"name": stop_by_iter_grad_acc_4_ddp
+"grad_accumulation_factor": 4
+"train_batch_size": 16
+"optimizer_step_limit": 320
+
+"number_of_epochs": 100
+"epoch_counter": !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: !ref <number_of_epochs>

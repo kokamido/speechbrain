@@ -1,0 +1,3 @@
+"name": 2_gpu_ddp_grad_acc_4
+"grad_accumulation_factor": 4
+"train_batch_size": 16

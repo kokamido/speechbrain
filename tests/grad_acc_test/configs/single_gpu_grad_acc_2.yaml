@@ -1,0 +1,3 @@
+"name": single_gpu_grad_acc_2
+"grad_accumulation_factor": 2
+"train_batch_size": 32

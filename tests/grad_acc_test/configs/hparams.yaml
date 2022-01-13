@@ -1,0 +1,14 @@
+train_batch_size: 64
+val_batch_size: 64
+number_of_epochs: 2
+
+dataset_samples_count: 12800
+dataset_features_count: 24
+dataset_features_informative: 15
+
+opt_class: !name:torch.optim.Adam
+
+loss: !new:torch.nn.modules.loss.BCEWithLogitsLoss
+
+epoch_counter: !new:speechbrain.utils.epoch_loop.EpochCounter
+  limit: !ref <number_of_epochs>

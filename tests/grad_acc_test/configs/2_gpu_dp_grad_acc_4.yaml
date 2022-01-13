@@ -1,0 +1,4 @@
+"name": 2_gpu_dp_grad_acc_4
+"grad_accumulation_factor": 4
+"data_parallel_backend": True
+"train_batch_size": 16
